@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Odoo with Apeiron</title>
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <div class="brand">Apeiron</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./notes/cover.html">Notes</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Odoo ERP</h1>
+        <p>Odoo is a robust, open-source Enterprise Resource Planning (ERP) software, designed with a modular approach that allows it to be customized to meet the diverse needs of businesses across various industries.</p>
+        <p><em>In this blog, I will share my insights, experiences, and the knowledge I've gained while exploring Odoo, with the aim of leveraging its capabilities for practical business solutions.</em></p>
+    </header>
+    
+    <!-- Architecture Section -->
+    <section>
+        <h2 class="arch">Understanding Odoo's Architecture</h2>
+
+        <!-- SVG Diagram of Odoo Architecture -->
+        <div class="svg-container">
+            <!-- Placeholder for SVG, replace with your actual SVG -->
+            <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <rect x="50" y="20" width="300" height="50" fill="#333"/>
+                <rect x="50" y="90" width="300" height="50" fill="#777"/>
+                <rect x="50" y="160" width="300" height="50" fill="#999"/>
+                <text x="200" y="50" text-anchor="middle" fill="white">Application Tier</text>
+                <text x="200" y="120" text-anchor="middle" fill="white">Presentation Tier</text>
+                <text x="200" y="190" text-anchor="middle" fill="white">Database Tier</text>
+            </svg>
+        </div>
+
+        <!-- Architecture Explanation -->
+        <p>Odoo is built on a multi-tier architecture, consisting of the following three key layers:</p>
+        
+        <ul>
+            <li><strong>Application Tier:</strong> This layer handles the core logic and processing. Odoo's core and its various modules are developed using Python, and additional modules can be installed based on user needs. It relies on an ORM (Object-Relational Mapping) that interfaces with the database.</li>
+            <li><strong>Presentation Tier:</strong> The user interface layer, which is accessed via a web browser. It serves dynamic content to users using web technologies such as HTML, JavaScript, and XML, allowing users to interact with Odoo’s various applications.</li>
+            <li><strong>Database Tier:</strong> Odoo's database layer is powered by PostgreSQL. The ORM maps Python objects to database tables, and PostgreSQL ensures that the data is securely stored and managed.</li>
+        </ul>
+
+
+        <img max-width="1200px" src="./img/odoo_struct.svg" />
+
+        <!-- Odoo overview -->
+
+        <h2 class="dark-text">Odoo overview</h2>
+        <p class="p">Odoo is a web-based platform that runs through your browser. It has two main parts: the Client side (Web Client) and the Server side (Application and Database).</p>
+        
+        <h3 class="dark-text">Client Side (Web Client)</h3>
+        <p class="p">The Client side is where the magic happens for users, using HTML, CSS, and JavaScript to create the presentation layer. In Odoo, JavaScript and SCSS help make the pages look great. For an even more structured and modular design, Odoo uses its own front-end framework called "OWL" (Odoo Web Library). It makes building UI a lot more organized and efficient.</p>
+    
+        <h3 class="dark-text">Server Side</h3>
+        <p class="p">The Server side is where all the heavy lifting happens. It has the Logic Layer, which is built with Python, and the Data Layer, which uses PostgreSQL for storing and managing data.</p>
+    
+        <h3 class="dark-text">How Do They Talk to Each Other?</h3>
+        <p class="p">The Presentation Layer and the Logic Layer communicate via RPC (Remote Procedure Call). This ensures everything on the interface reacts smoothly based on the logic running in the background. The Logic Layer and Database Layer work together using Odoo’s ORM (Object Relational Mapping), which translates Python code into SQL commands to keep things secure and modular.</p>
+    
+        <!-- ORM Section -->
+        <h3 class="dark-text">The Object-Relational Mapping (ORM) in Odoo</h3>
+        <p class="p">Odoo’s ORM is a key part of its architecture. It abstracts the database layer, allowing developers to interact with Python objects rather than writing SQL queries. When a model is defined in Odoo, the ORM automatically generates the corresponding database table. This makes it easier to enforce constraints and relationships while maintaining the flexibility of Python.</p>
+
+        <!-- Additional Features Section -->
+        <h3 class="dark-text">Why is Odoo "Modular"?</h3>
+        <p class="p">Being modular means that Odoo is built up of individual components called modules. Everything in Odoo is a module, and these modules can work independently or together.</p>
+    
+        <h3 class="dark-text">What are Odoo Modules?</h3>
+        <p class="p">Modules are the building blocks of Odoo. Here are a few examples:</p>
+        <ul>
+            <li><strong>Application Modules:</strong> Complete business applications that run processes like accounting, inventory, or CRM.</li>
+            <li><strong>Technical Modules:</strong> These are the behind-the-scenes tools that help with integrations, web services, and other technical tasks.</li>
+            <li><strong>Theme Modules:</strong> Front-end modules that provide themes, layouts, and styling for the Odoo interface.</li>
+        </ul>
+        <p class="p">If you’re curious about how to make the most out of Odoo, you can check out <a class="embed-link" href="./notes/cover.html">my tutorials</a> for more insights!</p>
+    
+        <p class="p">This is Odoo in a nutshell. For more detailed notes, keep exploring the blog!</p>
+
+        
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Apeiron. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
